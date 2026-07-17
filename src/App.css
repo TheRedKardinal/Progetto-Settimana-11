@@ -1,3 +1,15 @@
+/* ***** RESET MINMALE ***** */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 /* ***** HEADER ***** */
 header {
   .logo {
@@ -39,6 +51,7 @@ header {
   }
 }
 
+/* ***** ANIMAZIONE LOGO ***** */
 @keyframes shine {
   0% {
     left: -75%;
@@ -47,3 +60,5 @@ header {
     left: 125%;
   }
 }
+
+/* ***** HOME ***** */

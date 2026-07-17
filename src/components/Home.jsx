@@ -1,11 +1,15 @@
-import CategoryRow from "./CategoryRow";
+import Hero from "./Hero";
+import MusicSection from "./MusicSection";
+import SearchResults from "./SearchResults";
 
-function Home() {
+function Home({ results }) {
   return (
     <>
-      <CategoryRow title="Rock" query="rock" />
-      <CategoryRow title="Elettronica" query="elettronica" />
-      <CategoryRow title="Hip Hop" query="hiphop" />
+      <Hero />
+      <SearchResults results={results} />
+      <MusicSection title="Rock" query="rock" />
+      <MusicSection title="Pop" query="pop" />
+      <MusicSection title="Hip Hop" query="hiphop" />
     </>
   );
 }

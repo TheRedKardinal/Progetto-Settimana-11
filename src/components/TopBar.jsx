@@ -1,13 +1,16 @@
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 
-function MyNavbar() {
+function TopBar() {
   return (
     <Navbar bg="dark" variant="dark" expand="md">
       <Container fluid>
         <Navbar.Brand href="#" className="logo">
-          CodeMusic <i class="bi bi-vinyl"></i>
+          CodeMusic <i className="bi bi-vinyl"></i>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="hamburger-navbar" />
+        <Navbar.Toggle
+          aria-controls="hamburger-navbar"
+          aria-label="Menu di navigazione"
+        />
         <Navbar.Collapse id="hamburger-navbar">
           <Nav className="ms-auto me-5 d-flex justify-content-between gap-4">
             <Nav.Link href="#">Home</Nav.Link>
@@ -25,4 +28,4 @@ function MyNavbar() {
   );
 }
 
-export default MyNavbar;
+export default TopBar;

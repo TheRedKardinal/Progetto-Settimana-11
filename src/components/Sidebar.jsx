@@ -1,13 +1,17 @@
 import { useState } from "react";
 import { searchSongs } from "../api/epiApi";
 
-function Aside({ setResults }) {
+function Sidebar({ setResults }) {
   const [query, setQuery] = useState("");
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const data = await searchSongs(query);
-    setResults(data);
+    try {
+      const data = await searchSongs(query);
+      setResults(data);
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   return (
@@ -20,9 +24,10 @@ function Aside({ setResults }) {
         <i className="bi bi-book-fill"></i>
         <span className="d-none d-md-inline">Your Library</span>
       </p>
-      <form onSubmit={handleSubmit} className="d-flex gap-2 flex-grow-1">
+      <form onSubmit={handleSubmit} className="d-flex gap-2 align-items-start">
         <input
           className="form-control"
+          aria-label="Cerca brani"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
@@ -34,4 +39,4 @@ function Aside({ setResults }) {
   );
 }
 
-export default Aside;
+export default Sidebar;

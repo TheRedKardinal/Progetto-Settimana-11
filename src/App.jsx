@@ -1,27 +1,29 @@
 import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
 import "./App.css";
-import Aside from "./components/Aside";
+import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
-import MyNavbar from "./components/MyNavbar";
+import TopBar from "./components/TopBar";
+import Player from "./components/Player";
 
 function App() {
   const [results, setResults] = useState([]);
   return (
     <>
       <header>
-        <MyNavbar />
+        <TopBar />
       </header>
       <main>
         <Row>
           <Col xs={12} md={3}>
-            <Aside setResults={setResults} />
+            <Sidebar setResults={setResults} />
           </Col>
           <Col xs={12} md={9}>
-            <Home />
+            <Home results={results} />
           </Col>
         </Row>
       </main>
+      <Player />
     </>
   );
 }

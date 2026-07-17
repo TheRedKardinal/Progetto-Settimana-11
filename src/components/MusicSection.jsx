@@ -30,7 +30,7 @@ function MusicSection({ title, query }) {
       )}
       {error && <p className="text-danger">{error}</p>}
       {!isLoading && !error && (
-        <Row xs={2} md={4} className="g-2">
+        <Row xs={2} md={4} className="g-2 justify-content-center">
           {songs.slice(0, 4).map((song) => (
             <MusicCard key={song.id} song={song} />
           ))}

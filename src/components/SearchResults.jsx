@@ -7,7 +7,7 @@ function SearchResults({ results }) {
   return (
     <section className="category-cards">
       <h2>Risultati della ricerca</h2>
-      <Row xs={2} md={4} className="g-2">
+      <Row xs={2} md={4} className="g-2 justify-content-center">
         {results.map((song) => (
           <MusicCard key={song.id} song={song} />
         ))}

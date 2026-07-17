@@ -15,10 +15,10 @@ function App() {
       </header>
       <main>
         <Row>
-          <Col xs={12} md={3}>
+          <Col xs={12} md={2} className="sidebar-col">
             <Sidebar setResults={setResults} />
           </Col>
-          <Col xs={12} md={9}>
+          <Col xs={12} md={10}>
             <Home results={results} />
           </Col>
         </Row>

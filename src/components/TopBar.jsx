@@ -1,10 +1,10 @@
-import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 function TopBar() {
   return (
     <Navbar bg="dark" variant="dark" expand="md">
       <Container fluid>
-        <Navbar.Brand href="#" className="logo">
+        <Navbar.Brand href="#" className="logo ms-3">
           CodeMusic <i className="bi bi-vinyl"></i>
         </Navbar.Brand>
         <Navbar.Toggle
@@ -17,10 +17,6 @@ function TopBar() {
             <Nav.Link href="#">Novità</Nav.Link>
             <Nav.Link href="#">Radio</Nav.Link>
             <Nav.Link href="#">La tua libreria</Nav.Link>
-          </Nav>
-          <Nav className="d-flex gap-2">
-            <Button>Registrati</Button>
-            <Button>Login</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

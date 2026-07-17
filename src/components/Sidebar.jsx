@@ -16,6 +16,16 @@ function Sidebar({ setResults }) {
 
   return (
     <div className="sidebar d-flex flex-row flex-md-column gap-3 gap-md-4">
+      <hr className="d-none d-md-block sidebar-divider" />
+      <p className="d-none d-md-flex align-items-center gap-2 mb-0 sidebar-nav">
+        <i className="bi bi-house-door-fill"></i>
+        <span>Home</span>
+      </p>
+      <p className="d-none d-md-flex align-items-center gap-2 mb-0 sidebar-nav">
+        <i className="bi bi-book-fill"></i>
+        <span>La mia libreria</span>
+      </p>
+
       <form onSubmit={handleSubmit} className="search-bar">
         <input
           aria-label="Cerca brani"

@@ -92,7 +92,14 @@ main {
 
 /* ***** HERO ***** */
 .hero {
-  padding: 2rem 0;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: #4a1e7a;
   color: white;
 
   .hero-text p {
@@ -142,6 +149,7 @@ main {
   .search-bar {
     display: flex;
     align-items: center;
+    align-self: stretch;
     width: 100%;
     border: 1px solid rgb(154, 84, 223);
     border-radius: 20px;
@@ -173,12 +181,22 @@ main {
     }
   }
 
+  .sidebar-divider {
+    align-self: stretch;
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-top: 2px solid rgb(154, 84, 223);
+  }
+
   .sidebar-auth {
+    align-self: stretch;
     width: 100%;
     margin-top: auto;
   }
 
   .sidebar-legal {
+    align-self: stretch;
     font-size: 0.75rem;
 
     a {
@@ -265,6 +283,10 @@ main {
     }
   }
 
+  .volume-group {
+    margin-right: 1.5rem;
+  }
+
   .volume-range {
     width: 100px;
   }
@@ -329,7 +351,7 @@ input.form-range.volume-range::-moz-range-thumb {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 
   h2 {
     color: white;

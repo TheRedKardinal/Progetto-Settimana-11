@@ -73,6 +73,29 @@ main {
   );
 }
 
+/* ***** SIDEBAR ***** */
+.sidebar {
+  background: #000000;
+  color: #b3b3b3;
+  padding: 1rem;
+  align-items: center;
+
+  i {
+    font-size: 1.3rem;
+  }
+
+  span {
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    align-items: stretch;
+    min-height: 100%;
+  }
+}
+
 /* ***** Cards ***** */
 .category-cards {
   h2 {

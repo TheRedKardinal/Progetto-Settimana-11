@@ -8,14 +8,17 @@ function Home() {
     searchSongs("rock").then((data) => setSongs(data));
   }, []);
   return (
-    <div>
+    <div className="category-cards">
       <h2>Rock</h2>
-      <Row xs={2} md={4} className="g-3">
+      <Row xs={2} md={4} className="g-2">
         {songRock.map((song) => (
-          <Col key={song.id}>
+          <Col
+            key={song.id}
+            className="cards d-flex flex-column align-items-center"
+          >
             <img src={song.album.cover_medium} alt={song.title} />
-            <p>{song.title}</p>
-            <p>{song.artist.name}</p>
+            <p className="m-0">{song.title}</p>
+            <p className="m-0">{song.artist.name}</p>
           </Col>
         ))}
       </Row>

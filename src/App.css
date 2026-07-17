@@ -62,3 +62,27 @@ header {
 }
 
 /* ***** HOME ***** */
+main {
+  background: #c4b3e8;
+  background: linear-gradient(
+    100deg,
+    rgba(196, 179, 232, 1) 0%,
+    rgba(176, 138, 237, 1) 5%,
+    rgba(154, 84, 223, 1) 13%,
+    rgba(7, 6, 8, 1) 100%
+  );
+}
+
+/* ***** Cards ***** */
+.category-cards {
+  h2 {
+    color: white;
+  }
+  .cards {
+    color: white;
+  }
+  .cards img {
+    width: 150px;
+    aspect-ratio: 1/1;
+  }
+}
